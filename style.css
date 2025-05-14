@@ -32,7 +32,7 @@ div.summary>p:nth-child(2) {
 }
 
 p {
-    background-color: #4C408E;
+    background-color: #6B888E;
     padding: 3.513vh;
     margin: -3.513vh;
     border-radius: 1.756vh;
@@ -50,6 +50,12 @@ h3 {
     color: white;
     font-family: "IBM-Font";
     font-size: 24px;
+}
+
+header {
+    background-image: url(./images/birds.png);
+    object-fit: cover;
+    background-position: 12vw;
 }
 
 header>h1::before {
@@ -80,16 +86,16 @@ div h4 {
 }
 
 header>h1::after {
-    content: url(images/smoondark.png);
+    content: url(images/smoonlight.png);
     padding-left: 3.513vh;
 }
 
 header>h2::before {
-    content: url(/images/m-moondark.png);
+    content: url(/images/msun.png);
     position: absolute;
     top: 12.5%;
-    left: 48.5vw;
-    transform: translateX(-53%);
+    left: 50vw;
+    transform: translateX(-50%);
     margin-top: 1.756vh;
 }
 
@@ -116,13 +122,13 @@ div.summary ~ div.preamble>h3 {
 
 
 div.preamble>h3::after {
-    content: url(/images/rocket.png);
+    content: url(/images/cloudslong.png);
     position: absolute;
-    left: -55vw;
-    top: 55vh;
+    left: 1vw;
+    top: 56vh;
     animation: 10ms 1 normal slide-right;
     animation-timeline: view();
-    animation-range-start: 41vh;
+    animation-range-start: 20vw;
     z-index: -1;
 }
 
@@ -145,12 +151,12 @@ div.preamble p {
 }
 
 div.explanation>h3::before {
-    content: url(/images/meteor.png);
+    content: url(/images/cloudslong.png);
     position: absolute;
-    right: -40vw;
-    top: 92vh;
+    right: 1vw;
+    top: 113vh;
     z-index: -1;
-    animation: 10ms 1 normal slide-left-shrink;
+    animation: 10ms 1 normal slide-left;
     animation-timeline: view();
     animation-range-start: -90vh;
     overflow: clip;
@@ -189,10 +195,10 @@ div.participation>h3:nth-last-of-type(1) {
 }
 
 div.participation>h3::after {
-    content: url(/images/comet.png);
+    content: url(/images/cloudslong.png);
     position: absolute;
-    left: -34vw;
-    top: 145vh;
+    left: 15vw;
+    top: 176vh;
     z-index: -1;
     animation: 1000ms 1 normal slide-right-shrink;
     animation-timeline: view();
@@ -246,10 +252,10 @@ div[class~=main] {
 }
 
 [id|=zen-benefits] > h3::after {
-    content: url(/images/rocket.png);
+    content: url(/images/clouds.png);
     position: absolute;
-    left: -67vw;
-    top: 231.7vh;
+    left: 6vw;
+    top: 231vh;
     z-index: -1;
     overflow: clip;
     animation: 10ms 1 normal slide-right;
@@ -258,17 +264,17 @@ div[class~=main] {
 }
 
 [id|=zen-benefits] p {
-    background-color: #6B84A0;
+    background-color: #B0D5DD;
     animation: 100ms 1 normal slide-right;
     animation-timeline: view();
     animation-range-start: -700vh;
 }
 
 div[id$=-requirements] > h3::before {
-    content: url(/images/alienrocket.png);
+    content: url(/images/clouds.png);
     position: absolute;
-    top: 221.5vh;
-    left: 54.5vw;
+    top: 231vh;
+    right: 6vw;
     z-index: -1;
     overflow: clip;
     animation: 10ms 1 normal slide-left;
@@ -277,7 +283,7 @@ div[id$=-requirements] > h3::before {
 }
 
 div[id*=en-req] p {
-    background-color: #6B84A0;
+    background-color: #B0D5DD;
 }
 
 footer {
@@ -321,7 +327,7 @@ aside::after {
 delete all files related and this code if 
 uploading to zen garden*/
 /* aside::after {
-    content: url(/images/earth.avif);
+    content: url(/images/earth.png);
     position: absolute;
     bottom: -360vh;
     left: 50vw;
@@ -356,7 +362,7 @@ div.design-selection,
 }
 
 div.zen-resources::after {
-    content: url(/images/bsun.png);
+    content: url(/images/lmoonlight.png);
     position: absolute;
     top: 372vh;
     animation: 1s infinite normal sun-spin;
@@ -367,7 +373,7 @@ div.zen-resources::after {
         transform: rotate(0deg);
     }
     50%{
-        transform: rotate(45deg);
+        transform: rotate(20deg);
     }
     100%{
         transform: rotate(0deg);
@@ -434,8 +440,7 @@ div.participation > p {
 :root:nth-of-type(1) {
     display: flex;
     flex-flow: row wrap;
-    background-color: #041A40;
-    background-image: url(/images/stars.png);
+    background-color: #4CAAC8;
     background-size: 99%;
     overflow-x: clip;
 }
