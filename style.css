@@ -60,7 +60,7 @@ header {
 
 header>h1::before {
     content: url(/images/s-sun.png);
-    padding-right: 4.444vh;
+    padding-right: 2vw;
     padding-left: 3.513vh;
 }
 
@@ -116,7 +116,7 @@ div.summary ~ div.preamble>h3 {
     justify-self: flex-start;
     z-index: 5;
     border-color: white;
-    color: #4C408E
+    color: black
 }
 
 
@@ -154,7 +154,7 @@ div.explanation>h3::before {
     content: url(/images/cloudslong.png);
     position: absolute;
     right: 1vw;
-    top: 113vh;
+    top: 114vh;
     z-index: -1;
     animation: 10ms 1 normal slide-left;
     animation-timeline: view();
@@ -167,7 +167,7 @@ div.explanation>h3:nth-last-child(3) {
     justify-self: flex-end;
     margin-top: 14%;
     border-color: white;
-    color:#4C408E;
+    color:black;
 }
 
 div.explanation p {
@@ -191,14 +191,14 @@ div.explanation p {
 div.participation>h3:nth-last-of-type(1) {
     justify-self: center;
     margin-top: 35.126vh;
-    color: #4C408E
+    color: black
 }
 
 div.participation>h3::after {
     content: url(/images/cloudslong.png);
     position: absolute;
-    left: 15vw;
-    top: 176vh;
+    left: 12vw;
+    top: 177vh;
     z-index: -1;
     animation: 1000ms 1 normal slide-right-shrink;
     animation-timeline: view();
@@ -248,14 +248,14 @@ div[class~=main] {
 
 [id|=zen-benefits] > h3, div[id^=zen-req] > h3 {
     border-color: white;
-    color: #4C408E;
+    color: #000000;
 }
 
 [id|=zen-benefits] > h3::after {
     content: url(/images/clouds.png);
     position: absolute;
     left: 6vw;
-    top: 231vh;
+    top: 233vh;
     z-index: -1;
     overflow: clip;
     animation: 10ms 1 normal slide-right;
@@ -265,6 +265,7 @@ div[class~=main] {
 
 [id|=zen-benefits] p {
     background-color: #B0D5DD;
+    color: black;
     animation: 100ms 1 normal slide-right;
     animation-timeline: view();
     animation-range-start: -700vh;
@@ -273,13 +274,17 @@ div[class~=main] {
 div[id$=-requirements] > h3::before {
     content: url(/images/clouds.png);
     position: absolute;
-    top: 231vh;
+    top: 233vh;
     right: 6vw;
     z-index: -1;
     overflow: clip;
     animation: 10ms 1 normal slide-left;
     animation-timeline: view();
     animation-range-start: -380vh;
+}
+
+div[id$=-requirements] p {
+    color: black
 }
 
 div[id*=en-req] p {
@@ -380,14 +385,14 @@ div.zen-resources::after {
     }
 } 
 abbr {
-    color: rgb(218, 69, 255);
+    color: rgb(255, 227, 69);
 }
 a:only-child {
     color: white;
 }
 
 a:active {
-    color: blue;
+    color: rgb(154, 154, 255);
 }
 
 a:hover {
@@ -399,7 +404,7 @@ a:visited {
 }
 
 a:link {
-    color: #5892ff;
+    color: #bfff58;
 }
 
 p::selection {
@@ -411,11 +416,11 @@ p::first-letter {
 }
 
 [id|=zen-benefits] abbr, div[id^=zen-req] abbr {
-    color:aqua;
+    color:rgb(0, 26, 97);
 }
 
 [id|=zen-benefits] a, div[id^=zen-req] a {
-        color: rgb(15, 255, 175);
+        color: rgb(12, 92, 65);
 }
 
 [id|=zen-benefits] a:visited, div[id^=zen-req] a:visited {
@@ -443,4 +448,15 @@ div.participation > p {
     background-color: #4CAAC8;
     background-size: 99%;
     overflow-x: clip;
+}
+
+#zen-preamble::before {
+        background-image: url(/images/rain.avif);
+        margin-top: 10vh;
+        z-index: -2;
+        position: absolute;
+        background-size: 100% 140vh;
+        width: 100vw;
+        height: 140vh;
+        content: "";
 }
